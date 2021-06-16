@@ -17,9 +17,9 @@ weatherForm.addEventListener('submit', (event) => {
             console.log(data.error)
             messageOne.textContent = data.error
         }else{
-            messageOne.textContent = data.location + "'s current temperature is " + data.forecast.temperature
-            + " and chance of precipitaion is " + data.forecast.precipitation 
-            messageTwo = "temperature is " + data.forecast.temperature + "chances of rain " + 
+            messageOne.textContent = data.location 
+             
+            messageTwo.textContent = "temperature is " + data.forecast.temperature + "chances of rain " + 
             data.forecast.precipitation + "%" + ", humidity is " + data.forecast.humidity + "wind speed " +
             data.forecast.wind_speed + "Km/ph"
         }
