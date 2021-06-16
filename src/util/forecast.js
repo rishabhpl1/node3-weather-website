@@ -15,7 +15,9 @@ const forecast = (lattitute, longitude, callback) =>{
             callback(undefined, {
                 temperature: res.body.current.temperature,
                 precipitation: res.body.current.precip,
-                location: res.body.location.name
+                location: res.body.location.name,
+                wind_speed: res.body.current.wind_speed,
+                humidity: res.body.current.humidity
             })
              
         }
